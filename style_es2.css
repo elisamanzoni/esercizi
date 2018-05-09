@@ -1,0 +1,109 @@
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cerchio {
+  background-color: yellow;
+  height: 3vh;
+  width: 3vh;
+  border-radius: 100%;
+}
+
+.spostato {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)translate(200px, 0px);
+}
+
+.cerchio1 {
+  background-color: blue;
+  height: 12vh;
+  width: 12vh;
+  border-radius: 100%;
+}
+
+
+.cerchio2 {
+  background-color: red;
+  height: 0vh;
+  width: 0vh;
+  border-radius: 100%;
+}
+
+
+
+.spostatissimo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)translate(500px, 0px);
+}
+
+@keyframes ruota2 {
+  from {
+    transform:  translate(-50%, -50%) rotate(0deg)translate(300px,0px);
+  }
+  to {
+    transform:  translate(-50%, -50%)rotate(-360deg)translate(300px,0px);
+  }
+}
+
+@keyframes ruota2_anti {
+  from {
+    transform:  translate(-50%, -50%) rotate(0deg)translate(300px,0px);
+  }
+  to {
+    transform:  translate(-50%, -50%)rotate(360deg)translate(300px,0px);
+  }
+}
+
+
+
+
+@keyframes ruota1 {
+  from {
+    transform:  translate(-50%, -50%) rotate(0deg)translate(200px,0px);
+  }
+  to {
+    transform:  translate(-50%, -50%)rotate(360deg)translate(200px,0px);
+  }
+}
+
+@keyframes ruota1_anti {
+  from {
+    transform:  translate(-50%, -50%) rotate(0deg)translate(200px,0px);
+  }
+  to {
+    transform:  translate(-50%, -50%)rotate(-360deg)translate(200px,0px);
+  }
+}
+
+
+.pianeta1ruota{
+    animation: ruota1 1s infinite;
+}
+
+.pianeta1ruota_anti{
+    animation: ruota1_anti 1s infinite;
+}
+
+.pianeta2ruota{
+  background-color: red;
+  height: 8vh;
+  width: 8vh;
+  border-radius: 100%;
+    animation: ruota2 2s infinite;
+}
+
+.pianeta2ruota_anti{
+  background-color: red;
+  height: 8vh;
+  width: 8vh;
+  border-radius: 100%;
+    animation: ruota2_anti 2s infinite;
+}
