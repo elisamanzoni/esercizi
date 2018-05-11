@@ -1,0 +1,95 @@
+#es1{
+  font: 20px arial;
+  color: black;
+  text-align: center;
+}
+
+
+.green {
+  height: 10vh;
+  width: 10vh;
+  background-color: green;
+}
+
+.topsx{
+  position: absolute;
+  left:0%;
+  top: 0%;
+}
+
+.yellow {
+  height: 10vh;
+  width: 10vh;
+  background-color: yellow;
+}
+
+.topdx{
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.red {
+  height: 10vh;
+  width: 10vh;
+  background-color:red;
+}
+
+.dwnsx{
+  position: absolute;
+  left: 0%;
+  bottom:  0%;
+}
+.blue {
+  height: 10vh;
+  width: 10vh;
+  background-color: blue;
+}
+
+.dwndx{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+
+.center {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+@keyframes oscilla{
+  0%{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);}
+  25%{
+    position: absolute;
+    left: 25%;
+    top:50%;
+    transform: translate(-50%,-50%);}
+  50%{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);}
+  75%{
+    position: absolute;
+    left: 75%;
+    top:50%;
+    transform: translate(-50%,-50%);}
+  100%{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.move{
+  animation: oscilla 3s infinite;
+}
